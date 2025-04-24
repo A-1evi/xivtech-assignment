@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 30" width="100px" height="30px" aria-label="Sample 7-day chart">
+  <polyline
+    points="5 25, 20 20, 35 22, 50 15, 65 18, 80 10, 95 12"
+    fill="none"
+    stroke="#16c784" stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
