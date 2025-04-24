@@ -30,22 +30,19 @@ export const startMockWebSocket = () => {
     const currentAssets = currentState.crypto.assets;
     const updates = [];
 
-    // Randomly decide how many assets to update (1 to 3 for variety)
+    
     const numUpdates = Math.floor(Math.random() * 3) + 1;
-    const shuffledIds = [...assetIds].sort(() => 0.5 - Math.random()); // Shuffle IDs
+    const shuffledIds = [...assetIds].sort(() => 0.5 - Math.random());
     const idsToUpdate = shuffledIds.slice(0, numUpdates);
 
 
     idsToUpdate.forEach(id => {
       const asset = currentAssets.find(a => a.id === id);
-      if (!asset || asset.symbol === 'USDT') return; // Don't update stablecoins much
-
       const changes = {
-        price: generateRandomChange(asset.price, 0.001), // Smaller volatility for price
+        price: generateRandomChange(asset.price, 0.001), 
         percentChange1h: generateRandomPercentage(asset.percentChange1h, 0.1),
         percentChange24h: generateRandomPercentage(asset.percentChange24h, 0.2),
-        // percentChange7d usually updates less frequently, keep stable for simulation simplicity
-        volume24h: generateRandomChange(asset.volume24h, 0.01), // Higher volatility for volume
+        volume24h: generateRandomChange(asset.volume24h, 0.01), 
       };
       updates.push({ id, changes });
     });
@@ -54,7 +51,7 @@ export const startMockWebSocket = () => {
        store.dispatch(updateAssets(updates));
     }
 
-  }, 1500); // Update every 1.5 seconds
+  }, 1500); 
 };
 
 export const stopMockWebSocket = () => {
