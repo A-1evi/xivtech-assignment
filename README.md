@@ -1,10 +1,8 @@
 # Real-Time Crypto Price Tracker
 
-A responsive React application that displays cryptocurrency price information, similar to platforms like CoinMarketCap or CoinGecko. This version uses a **mock WebSocket simulation** for demonstrating real-time data updates.
+![image](https://github.com/user-attachments/assets/37af2621-220a-40b8-b2e4-a4ebfd54d55c)
 
-(![image](https://github.com/user-attachments/assets/37af2621-220a-40b8-b2e4-a4ebfd54d55c)
 
-*(Note: Included sample image might show features like tooltips or progress bars not implemented in this specific version)*
 
 ## Features
 
@@ -18,10 +16,8 @@ A responsive React application that displays cryptocurrency price information, s
     * Market Cap (Static)
     * 24h Volume (USD - updated by simulation)
     * Circulating Supply (Static)
-    * Max Supply (Static)
     * 7D Sparkline Chart (Static)
 * **Centralized State:** Uses Redux Toolkit for robust state management.
-* **Modern Styling:** Styled using Tailwind CSS utility classes.
 
 ## Tech Stack
 
@@ -61,7 +57,7 @@ A responsive React application that displays cryptocurrency price information, s
 **Prerequisites:**
 
 * [Node.js](https://nodejs.org/) (LTS version recommended)
-* [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+* [npm](https://www.npmjs.com/) 
 
 **Steps:**
 
